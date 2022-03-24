@@ -27,9 +27,13 @@ class PgUi(QMainWindow):
 
         # 添加绘图控件
         self.pw1 = pg.PlotWidget(enableAutoRange=True)
+        self.pw1.setTitle('current')
         self.pw2 = pg.PlotWidget(enableAutoRange=True)
+        self.pw2.setTitle('position')
         self.pw3 = pg.PlotWidget(enableAutoRange=True)
+        self.pw3.setTitle('velocity')
         self.pw4 = pg.PlotWidget(enableAutoRange=True)
+        self.pw4.setTitle('ripple torque')
         self.ui.imageShow.addWidget(self.pw1)
         self.ui.imageShow.addWidget(self.pw2)
         self.ui.imageShow.addWidget(self.pw3)

@@ -27,7 +27,7 @@
    <widget class="QPushButton" name="debugButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>10</y>
       <width>100</width>
       <height>100</height>
@@ -42,7 +42,7 @@
      </font>
     </property>
     <property name="text">
-     <string>DEBUG</string>
+     <string>START</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="serialTransmit">
@@ -95,8 +95,8 @@
    <widget class="QComboBox" name="inputmode">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>130</y>
+      <x>20</x>
+      <y>284</y>
       <width>181</width>
       <height>22</height>
      </rect>
@@ -105,8 +105,8 @@
    <widget class="QComboBox" name="controlmode">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>250</y>
+      <x>20</x>
+      <y>330</y>
       <width>181</width>
       <height>22</height>
      </rect>
@@ -184,40 +184,40 @@
    <widget class="QPushButton" name="posButton">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>220</x>
       <y>370</y>
-      <width>31</width>
+      <width>51</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>GO</string>
+     <string>SEND</string>
     </property>
    </widget>
    <widget class="QPushButton" name="velButton">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>220</x>
       <y>410</y>
-      <width>31</width>
+      <width>51</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>GO</string>
+     <string>SEND</string>
     </property>
    </widget>
    <widget class="QPushButton" name="torButton">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>220</x>
       <y>450</y>
-      <width>31</width>
+      <width>51</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>GO</string>
+     <string>SEND</string>
     </property>
    </widget>
    <widget class="QPushButton" name="transButton">
@@ -239,19 +239,6 @@
     </property>
     <property name="text">
      <string>SEND</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="stopButton">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>10</y>
-      <width>41</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>STOP</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="information">
@@ -441,10 +428,10 @@
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>110</y>
+      <x>20</x>
+      <y>260</y>
       <width>71</width>
-      <height>16</height>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
@@ -454,8 +441,8 @@
    <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>230</y>
+      <x>20</x>
+      <y>310</y>
       <width>121</width>
       <height>16</height>
      </rect>
@@ -467,14 +454,142 @@
    <widget class="QPushButton" name="nextButton">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>150</x>
       <y>10</y>
-      <width>75</width>
-      <height>101</height>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GAME</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="detectButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>101</width>
+      <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>NEXT</string>
+     <string>serial detect</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="port">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>170</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>port</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="portButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>170</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GO</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="mode">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>234</y>
+      <width>181</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>210</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mode</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdmode">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>230</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="digitCount">
+     <number>1</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdinput">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>280</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="digitCount">
+     <number>1</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdcontrol">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>330</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="digitCount">
+     <number>1</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
   </widget>
